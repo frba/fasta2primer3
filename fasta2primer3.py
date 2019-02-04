@@ -3,9 +3,10 @@
 ##
 # Concordia Genome Foundry
 # Script to output a normalization cvs file to be used on BioMek
-# author:
+# author: Flavia Araujo - Adapted from Jon Laurent
 # date: February 4th, 2019
 # usage: python fasta2primer3.py <input fasta file path>
+# sudo apt install primer3
 
 
 import sys
