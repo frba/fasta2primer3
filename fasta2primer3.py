@@ -61,6 +61,7 @@ def make_boulderio(seqid, seq):
         for param in boulder.keys():
             boulderf.write(str(param+"="+str(boulder[param])+"\n"))
         boulderf.write("="+"\n")    
+    # print str(boulderfile)
     return str(boulderfile)
 
 
@@ -87,7 +88,7 @@ def create_output_file(fastafile):
 
 
 def main():
-    if len(sys.argv) > 1:
+    if len(sys.argv) > 0:
         '''Get the input fasta file'''
         fastafile = sys.argv[1]
         # fastafile = 'seq.fasta'
@@ -120,8 +121,8 @@ def main():
         outfile.close()
 
     else:
-        print "Insert the expected number of arguments"
-        print "#Usage: python exec.py input_file #numwell_input #numwell_output\n"
+        print("Insert the expected number of arguments")
+        print("#Usage: python exec.py input_file #numwell_input #numwell_output\n")
 
 
 if __name__ == '__main__':
@@ -129,6 +130,6 @@ if __name__ == '__main__':
         main()
 
     except KeyboardInterrupt:
-        print 'Interrupted'
+        print('Interrupted')
 
 
